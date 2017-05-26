@@ -8,4 +8,9 @@ $(document).ready(function(){
 	$("#container").load("main.html",function(){
 		$.getScript("lib/assets/js/amazeui.min.js");
 	});
+	showView = function(view){
+		$("#container").load(view,function(){
+			$.getScript("lib/assets/js/amazeui.min.js");
+		});
+	}
 });
